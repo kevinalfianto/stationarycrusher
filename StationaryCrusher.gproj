@@ -1,0 +1,78 @@
+<project>
+ <properties autorotation="0" encryptAssets="0" fps="60" scaleMode="3" mouseToTouch="1" iosDevice="0" packageName="com.yourdomain.yourapp" logicalHeight="800" logicalWidth="480" mouseTouchOrder="0" encryptCode="0" retinaDisplay="1" touchToMouse="1" assetsOnly="0" orientation="1" architecture="0">
+  <imageScales/>
+ </properties>
+ <folder name="images">
+  <file source="images/packselect_up.png"/>
+  <file source="images/packselect_down.png"/>
+  <file source="images/start_up.png"/>
+  <file source="images/start_down.png"/>
+  <file source="images/soundson_up.png"/>
+  <file source="images/soundson_down.png"/>
+  <file source="images/soundsoff_up.png"/>
+  <file source="images/soundsoff_down.png"/>
+  <file source="images/settings_up.png"/>
+  <file source="images/settings_down.png"/>
+  <file source="images/resume_up.png"/>
+  <file source="images/resume_down.png"/>
+  <file source="images/reset_up.png"/>
+  <file source="images/reset_down.png"/>
+  <file source="images/pause_up.png"/>
+  <file source="images/pause_down.png"/>
+  <file source="images/next_up.png"/>
+  <file source="images/next_down.png"/>
+  <file source="images/musicon_up.png"/>
+  <file source="images/musicon_down.png"/>
+  <file source="images/musicoff_up.png"/>
+  <file source="images/musicoff_down.png"/>
+  <file source="images/menu_up.png"/>
+  <file source="images/menu_down.png"/>
+  <file source="images/main.png"/>
+  <file source="images/levelselect_up.png"/>
+  <file source="images/levelselect_down.png"/>
+  <file source="images/gideros_mobile.png"/>
+  <file source="images/credit_up.png"/>
+  <file source="images/credit_down.png"/>
+  <file source="images/crate_locked.png"/>
+  <file source="images/crate.png"/>
+  <file source="images/button_up.png"/>
+  <file source="images/button_down.png"/>
+  <file source="images/back_up.png"/>
+  <file source="images/back_down.png"/>
+ </folder>
+ <folder name="classes">
+  <file source="classes/TextWrap.lua"/>
+  <file source="classes/scenemanager.lua"/>
+  <file source="classes/lib.lua"/>
+  <file source="classes/json.lua"/>
+  <file source="classes/gtween.lua"/>
+  <file source="classes/easing.lua"/>
+  <file source="classes/dragableButton.lua"/>
+  <file source="classes/dataSaver.lua"/>
+  <file source="classes/button.lua"/>
+  <file source="classes/Ace.Slide.lua"/>
+ </folder>
+ <folder name="audio">
+  <file source="audio/main.mp3"/>
+  <file source="audio/hit.wav"/>
+  <file source="audio/complete.mp3"/>
+ </folder>
+ <folder name="assets">
+  <file source="assets/VERDANAZ.TTF"/>
+  <file source="assets/VERDANAI.TTF"/>
+  <file source="assets/VERDANAB.TTF"/>
+  <file source="assets/VERDANA.TTF"/>
+  <file source="assets/atlas.txt"/>
+  <file source="assets/atlas.png"/>
+ </folder>
+ <file source="StationaryCrusher.gproj"/>
+ <file source="start.lua"/>
+ <file source="settings.lua"/>
+ <file source="result.lua"/>
+ <file source="packs.json"/>
+ <file source="main_menu.lua"/>
+ <file source="main.lua"/>
+ <file source="level_select.lua"/>
+ <file source="level.lua"/>
+ <file source="credit.lua"/>
+</project>
