@@ -27,13 +27,13 @@ function settings:init()
 	self.volBar:setPosition(300,300)
 	self.volBar:setScaleX(0.8)
 	self.volBar:setScaleY(1.6)
-	self.volBarBg:setPosition(287,300)
+	self.volBarBg:setPosition(301,304)
 	self.volBarBg:setScaleX(0.6)
 	self.volBarBg:setScaleX(0.8*volValue);
 	
-	self.volPointer:setMinY(self.volBar:getY()-5)
-	self.volPointer:setMaxY(self.volBar:getY() + (self.volBar:getHeight() - 10)-5)
-	self.volPointer:setPosition(313,((1-volValue)*(self.volPointer:getMaxY() - self.volPointer:getMinY())) + 75)
+	self.volPointer:setMinX(self.volBar:getX()-5)
+	self.volPointer:setMaxX(self.volBar:getX() + (self.volBar:getWidth() - 10)-5)
+	self.volPointer:setPosition(((1-volValue)*(self.volPointer:getMaxX() - self.volPointer:getMinX())) + 313,285)
 	self.volPointer:addEventListener("move", self.onChangeVolume, self)
 	self.volPointer:addEventListener("finish", self.onFinishChangeVolume, self)
 	
@@ -103,13 +103,14 @@ end
 
 
 function settings:onChangeVolume(event)
-	local ratio = (self.volPointer:getY()-75) / (self.volPointer:getMaxY() - self.volPointer:getMinY())
+	local ratio = (self.volPointer:getX()-285) / (self.volPointer:getMaxX() - self.volPointer:getMinX())
 	self.volBarBg:setScaleX(0.8*(1-ratio));
 	volValue = 1-ratio;
 end
 
 function settings:onFinishChangeVolume(event)
 	if(not(soundChannel == nil)) then
-		soundChannel:setVolume(volValue);
+		--soundChannel:setVolume(volValue);
+		music.channel:setVolume(volValue);
 	end
 end
